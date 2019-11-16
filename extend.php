@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\StopForumSpam;
+namespace giffgaff\StopForumSpam;
 
 use Flarum\Extend;
 use FoF\Spamblock\Event\MarkedUserAsSpammer;
@@ -22,6 +22,6 @@ return[
     function (Dispatcher $events) {
         $events->listen(MarkedUserAsSpammer::class, Listeners\ReportSpammer::class);
 
-        $events->subscribe(Listeners\AddMiddleware::class);
-    },
+        $events->subscribe(Listeners\UserRegistration::class);
+    }
 ];

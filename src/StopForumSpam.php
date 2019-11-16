@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\StopForumSpam;
+namespace giffgaff\StopForumSpam;
 
 use Flarum\Settings\SettingsRepositoryInterface;
 use GuzzleHttp\Client as Guzzle;
@@ -17,7 +17,7 @@ use Psr\Http\Message\ResponseInterface;
 
 class StopForumSpam
 {
-    private const KEY = 'fof-stopforumspam.api_key';
+    private const KEY = 'giffgaff-stopforumspam.api_key';
 
     /**
      * @var SettingsRepositoryInterface

@@ -1,7 +1,7 @@
-fof-stopforumspam:
+giffgaff-stopforumspam:
   admin:
     settings:
-      title: FriendsOfFlarum Stop Forum Spam
+      title: giffgaff Stop Forum Spam
 
       username_label: Username Spam Check
       ip_label: IP Address Spam Check

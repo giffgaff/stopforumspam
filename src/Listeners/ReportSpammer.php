@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\StopForumSpam\Listeners;
+namespace giffgaff\StopForumSpam\Listeners;
 
 use Flarum\Foundation\ValidationException;
 use FoF\Spamblock\Event\MarkedUserAsSpammer;
-use FoF\StopForumSpam\StopForumSpam;
+use giffgaff\StopForumSpam\StopForumSpam;
 use GuzzleHttp\Exception\RequestException;
 
 class ReportSpammer
@@ -55,7 +55,7 @@ class ReportSpammer
             ]);
         } catch (\Throwable $e) {
             throw new ValidationException([
-                'sfs' => app('translator')->trans('fof-stopforumspam.api.error.unknown'),
+                'sfs' => app('translator')->trans('giffgaff-stopforumspam.api.error.unknown'),
             ]);
         }
     }

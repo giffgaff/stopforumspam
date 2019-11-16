@@ -1,5 +1,5 @@
 {
-  "name": "fof/stopforumspam",
+  "name": "giffgaff/stopforumspam",
   "description": "Stop Forum Spam",
   "keywords": [
     "flarum",
@@ -12,7 +12,7 @@
     "guzzlehttp/guzzle": "6.*"
   },
   "replace": {
-    "reflar/stopforumspam": "*"
+    "fof/stopforumspam": "*"
   },
   "authors": [
     {
@@ -24,24 +24,26 @@
       "name": "David Sevilla Martin",
       "email": "me@datitisev.me",
       "role": "Developer"
+    },
+    {
+      "name": "IanM",
+      "email": "ianm@giffgaff.co.uk",
+      "role": "Developer"
     }
   ],
   "autoload": {
     "psr-4": {
-      "FoF\\StopForumSpam\\": "src/"
+      "giffgaff\\StopForumSpam\\": "src/"
     }
   },
   "extra": {
     "flarum-extension": {
-      "title": "FoF Stop Forum Spam",
+      "title": "giffgaff Stop Forum Spam",
       "icon": {
         "name": "fas fa-stop",
         "backgroundColor": "#e74c3c",
         "color": "#fff"
       }
-    },
-    "flagrow": {
-      "discuss": "https://discuss.flarum.org/d/17846-friendsofflarum-stopforumspam"
     }
   }
 }
